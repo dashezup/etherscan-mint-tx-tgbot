@@ -101,10 +101,10 @@ DATA_FILE = path.join(
     "data.json"
 )
 SOUP_SESSION = requests.Session()
-USER_AGENT = (
-    'Mozilla/5.0 (X11; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0'
-)
-SOUP_SESSION.headers.update({'User-Agent': USER_AGENT})
+SOUP_SESSION.headers.update({
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:89.0) '
+    'Gecko/20100101 Firefox/89.0'
+})
 
 
 async def validate_mint_tx(tx):
